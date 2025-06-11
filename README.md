@@ -26,7 +26,7 @@
     let oddNumbers = numbers.filter(num => num % 2 !== 0);
 
     // Map: multiply odd numbers by 4, leave even numbers unchanged
-    let mappedOdd = numbers.map(num => (num % 2 !== 0 ? num * 4 : num));
+    let mappedOdd = numbers.map(num => num * 4);
 
     // Map: multiply all numbers by 2
     let mappedDouble = numbers.map(num => num * 2);
@@ -34,13 +34,14 @@
     // Display results
     document.getElementById("numbersOutput").innerHTML = "Original Numbers: " + numbers.join(", ");
     document.getElementById("oddNumbersOutput").innerHTML = "Odd Numbers: " + oddNumbers.join(", ");
-    document.getElementById("mappedOddOutput").innerHTML = "Mapped (Odd × 4): " + mappedOdd.join(", ");
+    document.getElementById("mappedOddOnlyOutput").innerHTML =
+      "Mapped Odd Numbers (×4): " + mappedOddOnly.join(", ");
     document.getElementById("mappedDoubleOutput").innerHTML = "Mapped (All × 2): " + mappedDouble.join(", ");
 
     // Console logs
     console.log("Original Numbers:", numbers);
     console.log("Odd Numbers:", oddNumbers);
-    console.log("Mapped (Odd × 4):", mappedOdd);
+    console.log("Mapped Odd Numbers Only (×4):", mappedOddOnly);
     console.log("Mapped (All × 2):", mappedDouble);
   </script>
 
