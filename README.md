@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Combined Array Example</title>
@@ -5,16 +6,27 @@
 <body>
 
   <h2>Simple Array with ID and Name</h2>
-  <p id="userOutput"></p>
+  <div id="userOutput"></div>
 
   <h2>JavaScript Fruits Array</h2>
   <p id="fruitsOutput"></p>
 
   <script>
-    // --- User Array ---
-    let user = ["1", "Ali"],["2", "hamza"],["3", "safiq"],["4", "kodu"];
-    document.getElementById("userOutput").innerHTML = "ID: " + user[0] + ", Name: " + user[1];
-    console.log("User Array:", user);
+    // --- User Array as an array of arrays ---
+    let users = [
+      ["1", "Ali"],
+      ["2", "Hamza"],
+      ["3", "Safiq"],
+      ["4", "Kodu"]
+    ];
+
+    // Display all users
+    let userOutput = "";
+    users.forEach(function(user) {
+      userOutput += "ID: " + user[0] + ", Name: " + user[1] + "<br>";
+    });
+    document.getElementById("userOutput").innerHTML = userOutput;
+    console.log("Users Array:", users);
 
     // --- Fruits Array ---
     let fruits = ["Apple", "Banana", "Mango", "Orange"];
