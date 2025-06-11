@@ -34,14 +34,14 @@
     // Display results
     document.getElementById("numbersOutput").innerHTML = "Original Numbers: " + numbers.join(", ");
     document.getElementById("oddNumbersOutput").innerHTML = "Odd Numbers: " + oddNumbers.join(", ");
-    document.getElementById("mappedOddOnlyOutput").innerHTML =
-      "Mapped Odd Numbers (×4): " + mappedOddOnly.join(", ");
+    document.getElementById("mappedOddOutput").innerHTML =
+      "Mapped Odd Numbers (×4): " + mappedOdd.join(", ");
     document.getElementById("mappedDoubleOutput").innerHTML = "Mapped (All × 2): " + mappedDouble.join(", ");
 
     // Console logs
     console.log("Original Numbers:", numbers);
     console.log("Odd Numbers:", oddNumbers);
-    console.log("Mapped Odd Numbers Only (×4):", mappedOddOnly);
+    console.log("Mapped Odd Numbers (×4):", mappedOdd);
     console.log("Mapped (All × 2):", mappedDouble);
   </script>
 
