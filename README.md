@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Combined Array Example</title>
+  <title>Array of 20 Numbers</title>
 </head>
 <body>
 
-  <h2>Simple Array with ID and Name</h2>
-  <div id="userOutput"></div>
-
-  <h2>JavaScript Fruits Array</h2>
-  <p id="fruitsOutput"></p>
+  <h2>Array of 20 Numbers</h2>
+  <p id="numbersOutput"></p>
 
   <script>
-    // --- User Array as an array of arrays ---
-    let users = [
-      ["1", "Ali"],
-      ["2", "Hamza"],
-      ["3", "Safiq"],
-      ["4", "Kodu"]
-    ];
+    // Create an array of 20 numbers (1 to 20)
+    let numbers = [];
+    for (let i = 1; i <= 20; i++) {
+      numbers.push(i);
+    }
 
-    // Display all users
-    let userOutput = "";
-    users.forEach(function(user) {
-      userOutput += "ID: " + user[0] + ", Name: " + user[1] + "<br>";
-    });
-    document.getElementById("userOutput").innerHTML = userOutput;
-    console.log("Users Array:", users);
+    // Display the numbers in the browser
+    document.getElementById("numbersOutput").innerHTML = "Numbers: " + numbers.join(", ");
 
-    // --- Fruits Array ---
-    let fruits = ["Apple", "Banana", "Mango", "Orange"];
-    document.getElementById("fruitsOutput").innerHTML = "Fruits: " + fruits.join(", ");
-    console.log("Fruits Array:", fruits);
+    // Also log to console
+    console.log("Array of 20 Numbers:", numbers);
   </script>
 
 </body>
