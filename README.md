@@ -1,34 +1,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Card and Boxes</title>
+  <title>Responsive Layout</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .box {
-      background-color: olive;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      margin: 10px;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="container mt-5">
-    <!-- Card -->
-    <div class="card mb-4">
-      <div class="card-body">
-        <h5 class="card-title">Card Title</h5>
-        <p class="card-text">This is a card with padding, margin, and border.</p>
-      </div>
-    </div>
+  <div class="container mt-5 p-4 border">
+    <h2>Responsive Layout</h2>
+    <p>This is a simple hero unit, a simple jumbotron-style component, for calling extra attention to featured content or information.</p>
 
-    <!-- Boxes -->
-    <div class="d-flex justify-content-between">
-      <div class="box">BOX 1</div>
-      <div class="box">BOX 2</div>
-      <div class="box">BOX 3</div>
+    <!-- Columns -->
+    <div class="mb-2 border p-2">Column</div>
+    <div class="mb-2 border p-2">Column</div>
+    <div class="mb-2 border p-2">Column</div>
+
+    <!-- Button -->
+    <button class="btn btn-primary mt-2">Button</button>
+
+    <!-- Alert -->
+    <div class="alert alert-warning mt-3" role="alert">
+      This is an alert—check it out!
     </div>
   </div>
 
