@@ -29,7 +29,7 @@
       border: 1px solid #ccc;
       padding: 10px;
       text-align: center;
-      margin: 20px;
+      margin: 0px;
       width: 100%;
       gap: 0px;
     }
