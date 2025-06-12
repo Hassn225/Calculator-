@@ -13,7 +13,7 @@
     .card {
       background-color: white;
       border: 1px solid #ccc;
-      padding: 20px;
+      padding: 100px;
       margin-bottom: 30px;
       width: 80%;
     }
