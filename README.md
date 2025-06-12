@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 40px;
+      padding: 100px;
       background-color: #f4f4f4;
     }
 
@@ -15,7 +15,7 @@
       border: 1px solid #ccc;
       padding: 20px;
       margin-bottom: 30px;
-      width: 300px;
+      width: 80%;
     }
 
     .card-title {
@@ -34,7 +34,7 @@
       color: white;
       padding: 20px;
       text-align: center;
-      width: 100px;
+      width: 80%;
     }
   </style>
 </head>
