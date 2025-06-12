@@ -11,9 +11,9 @@
     <p>This is a simple hero unit, a simple jumbotron-style component, for calling extra attention to featured content or information.</p>
 
     <!-- Columns -->
-    <div class="mb-2 border p-2">Column</div>
-    <div class="mb-2 border p-2">Column</div>
-    <div class="mb-2 border p-2">Column</div>
+    <div class="mb-2 border p-2 text-center">Column</div>
+    <div class="mb-2 border p-2 text-center">Column</div>
+    <div class="mb-2 border p-2 text-center">Column</div>
 
     <!-- Button -->
     <div class="text-center">
