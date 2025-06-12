@@ -7,7 +7,7 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #fff;
-      padding: 40px;
+      padding: 20px;
     }
 
     .container {
