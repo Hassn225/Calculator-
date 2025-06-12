@@ -1,49 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mapping Odd and All Numbers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Layout Example</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .custom-box {
+      background-color: olive;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-light">
 
-  <h2>Original Array of 20 Numbers</h2>
-  <p id="numbersOutput"></p>
+  <div class="container mt-5">
 
-  <h2>Odd Numbers Only (Filtered)</h2>
-  <p id="oddNumbersOutput"></p>
+    <!-- Card Section -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <p class="card-text">This is a card with padding, margin, and border.</p>
+      </div>
+    </div>
 
-  <h2>Mapped: Odd Numbers × 4 (Others Unchanged)</h2>
-  <p id="mappedOddOutput"></p>
+    <!-- Boxes Section -->
+    <div class="d-flex justify-content-between flex-wrap">
+      <div class="custom-box flex-fill text-center mx-2">BOX 1</div>
+      <div class="custom-box flex-fill text-center mx-2">BOX 2</div>
+      <div class="custom-box flex-fill text-center mx-2">BOX 3</div>
+    </div>
 
-  <h2>Mapped: All Numbers × 2</h2>
-  <p id="mappedDoubleOutput"></p>
+    <!-- Responsive Layout Section -->
+    <div class="mt-5 p-4 border rounded bg-white">
+      <h2>Responsive Layout</h2>
+      <p>This is a simple hero unit, a simple jumbotron-style component, for calling extra attention to featured content or information.</p>
 
-  <script>
-    // Original array
-    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-                   11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <div class="p-3 border bg-light">Column</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="p-3 border bg-light">Column</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="p-3 border bg-light">Column</div>
+        </div>
+      </div>
 
-    // Filter odd numbers
-    let oddNumbers = numbers.filter(num => num % 2 !== 0);
+      <button class="btn btn-primary mt-3">Button</button>
 
-    // Map: multiply odd numbers by 4, leave even numbers unchanged
-    let mappedOdd = numbers.map(num => num * 4);
+      <div class="alert alert-warning mt-3" role="alert">
+        This is an alert—check it out!
+      </div>
+    </div>
 
-    // Map: multiply all numbers by 2
-    let mappedDouble = numbers.map(num => num * 2);
+  </div>
 
-    // Display results
-    document.getElementById("numbersOutput").innerHTML = "Original Numbers: " + numbers.join(", ");
-    document.getElementById("oddNumbersOutput").innerHTML = "Odd Numbers: " + oddNumbers.join(", ");
-    document.getElementById("mappedOddOutput").innerHTML =
-      "Mapped Odd Numbers (×4): " + mappedOdd.join(", ");
-    document.getElementById("mappedDoubleOutput").innerHTML = "Mapped (All × 2): " + mappedDouble.join(", ");
-
-    // Console logs
-    console.log("Original Numbers:", numbers);
-    console.log("Odd Numbers:", oddNumbers);
-    console.log("Mapped Odd Numbers (×4):", mappedOdd);
-    console.log("Mapped (All × 2):", mappedDouble);
-  </script>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
