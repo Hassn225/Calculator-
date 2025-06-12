@@ -11,7 +11,7 @@
     }
 
     .container {
-      max-width: 50%;
+      max-width: auto;
       margin: 0 auto;
       border: 1px solid #ccc;
       padding: 30px;
@@ -29,8 +29,8 @@
       border: 1px solid #ccc;
       padding: 10px;
       text-align: center;
-      margin: 10px auto;
-      width: 80%;
+      margin: 0px auto;
+      width: 100%;
       gap: 0px;
     }
 
