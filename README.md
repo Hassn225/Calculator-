@@ -13,9 +13,9 @@
     .card {
       background-color: white;
       border: 1px solid #ccc;
-      padding: 100px;
+      padding: 20px;
       margin-bottom: 30px;
-      width: 80%;
+      width: 100%;
     }
 
     .card-title {
