@@ -8,7 +8,7 @@
 
   <div class="container mt-5 p-4 border">
     <h2>Responsive Layout</h2>
-    <p>This is a simple hero unit, a simple jumbotron-style component, for calling extra attention to featured content or information.</p>
+    <p>agahsjs hsusjs jsisjsj usjsjsj hshs, Kskskd jdjdjdjd jsjskjdkd.jdjdidiod jeiidn,jdjdiididodinj jsjjsjdjdjd</p>
 
     <!-- Columns -->
     <div class="mb-2 border p-2 text-center">Column</div>
