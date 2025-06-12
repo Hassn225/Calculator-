@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +6,7 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #fff;
-      padding: 20px;
+      padding: 10px;
     }
 
     .container {
