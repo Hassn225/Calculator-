@@ -1,27 +1,83 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Responsive Layout</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Responsive Layout (Plain CSS)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .column {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      margin: 10px auto;
+      width: 80%;
+    }
+
+    .button-wrapper {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: royalblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .alert {
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 15px;
+      text-align: center;
+      margin-top: 20px;
+      border-radius: 5px;
+      border: 1px solid #ffeeba;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container mt-5 p-4 border">
+  <div class="container">
     <h2>Responsive Layout</h2>
-    <p>agahsjs hsusjs jsisjsj usjsjsj hshs, Kskskd jdjdjdjd jsjskjdkd.jdjdidiod jeiidn,jdjdiididodinj jsjjsjdjdjd</p>
+    <p>
+      This is a simple hero unit, a simple jumbotron-style component, for calling
+      extra attention to featured content or information.
+    </p>
 
-    <!-- Columns -->
-    <div class="mb-2 border p-2 text-center">Column</div>
-    <div class="mb-2 border p-2 text-center">Column</div>
-    <div class="mb-2 border p-2 text-center">Column</div>
+    <div class="column">Column</div>
+    <div class="column">Column</div>
+    <div class="column">Column</div>
 
-    <!-- Button -->
-    <div class="text-center">
-      <button class="btn btn-primary">Button</button>
+    <div class="button-wrapper">
+      <button>Button</button>
     </div>
 
-    <!-- Alert -->
-    <div class="alert alert-warning mt-3" role="alert">
+    <div class="alert">
       This is an alert—check it out!
     </div>
   </div>
