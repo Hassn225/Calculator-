@@ -16,7 +16,9 @@
     <div class="mb-2 border p-2">Column</div>
 
     <!-- Button -->
-    <button class="btn btn-primary mt-2">Button</button>
+    <div class="text-center">
+      <button class="btn btn-primary">Button</button>
+    </div>
 
     <!-- Alert -->
     <div class="alert alert-warning mt-3" role="alert">
