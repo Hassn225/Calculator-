@@ -53,7 +53,7 @@
       background-color: #fff3cd;
       color: #856404;
       padding: 15px;
-      margin-top: 20px;
+      margin-top: 10px;
       border-radius: 5px;
       border: 1px solid #ffeeba;
     }
