@@ -2,84 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Responsive Layout (Plain CSS)</title>
+  <title>Card and Boxes (Plain CSS)</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fff;
       padding: 40px;
+      background-color: #f4f4f4;
     }
 
-    .container {
-      max-width: 500px;
-      margin: 0 auto;
+    .card {
+      background-color: white;
       border: 1px solid #ccc;
-      padding: 30px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    p {
-      text-align: center;
+      padding: 20px;
       margin-bottom: 30px;
+      width: 300px;
     }
 
-    .column {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-      margin: 10px auto;
-      width: 80%;
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .button-wrapper {
-      text-align: center;
-      margin-top: 20px;
+    .boxes {
+      display: flex;
+      gap: 20px;
     }
 
-    button {
-      padding: 10px 20px;
-      background-color: royalblue;
+    .box {
+      background-color: olive;
       color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .alert {
-      background-color: #fff3cd;
-      color: #856404;
-      padding: 15px;
+      padding: 20px;
       text-align: center;
-      margin-top: 20px;
-      border-radius: 5px;
-      border: 1px solid #ffeeba;
+      width: 100px;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h2>Responsive Layout</h2>
-    <p>
-      This is a simple hero unit, a simple jumbotron-style component, for calling
-      extra attention to featured content or information.
-    </p>
+  <div class="card">
+    <div class="card-title">Card Title</div>
+    <p>This is a card with padding, margin, and border.</p>
+  </div>
 
-    <div class="column">Column</div>
-    <div class="column">Column</div>
-    <div class="column">Column</div>
-
-    <div class="button-wrapper">
-      <button>Button</button>
-    </div>
-
-    <div class="alert">
-      This is an alert—check it out!
-    </div>
+  <div class="boxes">
+    <div class="box">BOX 1</div>
+    <div class="box">BOX 2</div>
+    <div class="box">BOX 3</div>
   </div>
 
 </body>
