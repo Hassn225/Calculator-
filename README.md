@@ -1,53 +1,83 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Card and Boxes (Plain CSS)</title>
+  <title>Responsive Layout (Plain CSS)</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 100px;
-      background-color: #f4f4f4;
+      background-color: #fff;
+      padding: 40px;
     }
 
-    .card {
-      background-color: white;
+    .container {
+      max-width: 50%;
+      margin: 0 auto;
       border: 1px solid #ccc;
-      padding: 20px;
+      padding: 30px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
       margin-bottom: 30px;
-      width: 100%;
     }
 
-    .card-title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .boxes {
-      display: flex;
-      gap: 20px;
-    }
-
-    .box {
-      background-color: olive;
-      color: white;
-      padding: 20px;
+    .column {
+      border: 1px solid #ccc;
+      padding: 10px;
       text-align: center;
+      margin: 10px auto;
       width: 80%;
+      gap: 0px;
+    }
+
+    .button-wrapper {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: royalblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .alert {
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+      border: 1px solid #ffeeba;
     }
   </style>
 </head>
 <body>
 
-  <div class="card">
-    <div class="card-title">Card Title</div>
-    <p>This is a card with padding, margin, and border.</p>
-  </div>
+  <div class="container">
+    <h2>Responsive Layout</h2>
+    <p>
+      This is a simple hero unit, a simple jumbotron-style component, for calling
+      extra attention to featured content or information.
+    </p>
 
-  <div class="boxes">
-    <div class="box">BOX 1</div>
-    <div class="box">BOX 2</div>
-    <div class="box">BOX 3</div>
+    <div class="column">Column</div>
+    <div class="column">Column</div>
+    <div class="column">Column</div>
+
+    <div class="button-wrapper">
+      <button>Button</button>
+    </div>
+
+    <div class="alert">
+      This is an alert—check it out!
+    </div>
   </div>
 
 </body>
