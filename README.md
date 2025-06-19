@@ -1,20 +1,26 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Array</title>
+  <title>Combined Array Example</title>
 </head>
 <body>
-		<script>
-			let array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-			console.log(array);
 
-			let filterArray = array.filter(n => n % 2 === 1);
-			console.log(filterArray);
+  <h2>Simple Array with ID and Name</h2>
+  <p id="userOutput"></p>
 
-			let filterArray = array.map(n => n % 2 === 1);
-			console.log(filterArray);
+  <h2>JavaScript Fruits Array</h2>
+  <p id="fruitsOutput"></p>
 
-			
-		</script>
+  <script>
+    // --- User Array ---
+    let user = ["1", "Ali"],["2", "hamza"],["3", "safiq"],["4", "kodu"];
+    document.getElementById("userOutput").innerHTML = "ID: " + user[0] + ", Name: " + user[1];
+    console.log("User Array:", user);
+
+    // --- Fruits Array ---
+    let fruits = ["Apple", "Banana", "Mango", "Orange"];
+    document.getElementById("fruitsOutput").innerHTML = "Fruits: " + fruits.join(", ");
+    console.log("Fruits Array:", fruits);
+  </script>
+
 </body>
 </html>
