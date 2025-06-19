@@ -1,37 +1,20 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Responsive Layout</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Array</title>
 </head>
 <body>
-  <div class="container mt-5">
-    <div class="border p-4 rounded">
-      <h2 class="fw-bold">Responsive Layout</h2>
-      <hr>
-      <p>
-        This is a simple hero unit, a simple jumbotron-style component,
-        for calling extra attention to featured content or information.
-      </p>
+		<script>
+			let array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+			console.log(array);
 
-      <!-- Modified responsive columns -->
-      <div class="row text-center">
-        <div class="col-12 col-md-4 border p-2">Column</div>
-        <div class="col-12 col-md-4 border p-2">Column</div>
-        <div class="col-12 col-md-4 border p-2">Column</div>
-      </div>
+			let filterArray = array.filter(n => n % 2 === 1);
+			console.log(filterArray);
 
-      <div class="text-center mt-3">
-        <button class="btn btn-primary">Button</button>
-      </div>
+			let filterArray = array.map(n => n % 2 === 1);
+			console.log(filterArray);
 
-      <div class="alert alert-warning mt-3" role="alert">
-        This is an alert—check it out!
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+			
+		</script>
 </body>
 </html>
