@@ -1,84 +1,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Responsive Layout (Plain CSS)</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      padding: 10px;
-    }
-
-    .container {
-      max-width: 60%;
-      margin: 0 auto;
-      border: 1px solid #ccc;
-      padding: 30px;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    p {
-      margin-bottom: 30px;
-    }
-
-    .column {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-      margin: 0px;
-      width: 100%;
-      gap: 0px;
-    }
-
-    .button-wrapper {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    button {
-      padding: 10px 20px;
-      background-color: royalblue;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin: 20px;
-    }
-
-    .alert {
-      background-color: #fff3cd;
-      color: #856404;
-      padding: 15px;
-      margin-top: 10px;
-      border-radius: 5px;
-      border: 1px solid #ffeeba;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+  <div class="container mt-5">
+    <div class="border p-4 rounded">
+      <h2 class="fw-bold">Responsive Layout</h2>
+      <hr>
+      <p>
+        This is a simple hero unit, a simple jumbotron-style component,
+        for calling extra attention to featured content or information.
+      </p>
 
-  <div class="container">
-    <h2>Responsive Layout</h2>
-    <p>
-      This is a simple hero unit, a simple jumbotron-style component, for calling
-      extra attention to featured content or information.
-    </p>
+      <!-- Modified responsive columns -->
+      <div class="row text-center">
+        <div class="col-12 col-md-4 border p-2">Column</div>
+        <div class="col-12 col-md-4 border p-2">Column</div>
+        <div class="col-12 col-md-4 border p-2">Column</div>
+      </div>
 
-    <div class="column">Column</div>
-    <div class="column">Column</div>
-    <div class="column">Column</div>
+      <div class="text-center mt-3">
+        <button class="btn btn-primary">Button</button>
+      </div>
 
-    <div class="button-wrapper">
-      <button>Button</button>
-    </div>
-
-    <div class="alert">
-      This is an alert—check it out!
+      <div class="alert alert-warning mt-3" role="alert">
+        This is an alert—check it out!
+      </div>
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
