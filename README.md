@@ -1,29 +1,18 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Combined Array Example</title>
+	<title>Array</title>
 </head>
 <body>
+	<script>
+		let array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+		console.log("Original Array:", array);
 
-  <h2>Simple Array with ID and Name</h2>
-  <p id="userOutput"></p>
+		let oddNumbers = array.filter(n => n % 2 === 1);
+		console.log("Filtered (Odd Numbers):", oddNumbers);
 
-  <h2>JavaScript Fruits Array</h2>
-  <p id="fruitsOutput"></p>
-
-  <script>
-    // --- User Array ---
-    let user = [
-      ["1", "Ali"],
-      ["2", "Hamza"],
-      ["3", "Safiq"],
-      ["4", "Kodu"]
-    ];
-    console.log("User Array:", user);
-
-    // --- Fruits Array ---
-    let fruits = ["Apple", "Banana", "Mango", "Orange"];
-    console.log("Fruits Array:", fruits);
-  </script>
-
+		let isOddFlags = array.map(n => n % 2 === 1);
+		console.log("Mapped (Is Odd Flags):", isOddFlags);
+	</script>
 </body>
 </html>
