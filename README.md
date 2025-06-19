@@ -12,8 +12,13 @@
 
   <script>
     // --- User Array ---
-    let user = ["1", "Ali"],["2", "hamza"],["3", "safiq"],["4", "kodu"];
-    document.getElementById("userOutput").innerHTML = "ID: " + user[0] + ", Name: " + user[1];
+    let user = [
+      ["1", "Ali"],
+      ["2", "Hamza"],
+      ["3", "Safiq"],
+      ["4", "Kodu"]
+    ];
+    document.getElementById("userOutput").innerHTML = "ID: " + user[0][0] + ", Name: " + user[0][1];
     console.log("User Array:", user);
 
     // --- Fruits Array ---
